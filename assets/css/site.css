@@ -233,3 +233,12 @@ figure.solo img{max-height:560px;width:auto;max-width:100%}
 .parte{scroll-margin-top:90px;border-top:1px solid #DDE5DF;margin-top:2.6em;padding-top:1.6em}
 .sumario{background:#F2F6F1;border-radius:10px;padding:12px 16px;margin:0 0 1.6em;font-size:.92rem;line-height:1.9}
 .sumario a{white-space:nowrap}
+/* parceiros oficiais */
+.parceiros-oficiais{display:flex;flex-direction:column;gap:34px;margin-top:22px}
+.parc-linha{display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap}
+.parc-linha img{display:block;width:auto;object-fit:contain}
+.parc-linha.l1 img{height:120px;max-width:200px}
+.parc-linha.l2 > a img,.parc-linha.l2 > span img{height:110px;max-width:280px}
+.parc-linha .pilha{display:flex;flex-direction:column;align-items:center;gap:12px}
+.parc-linha .pilha img{height:48px;max-width:170px}
+@media (max-width:760px){.parc-linha{justify-content:center}.parc-linha.l1 img{height:70px}.parc-linha.l2 > a img,.parc-linha.l2 > span img{height:64px}.parc-linha .pilha img{height:34px}}
