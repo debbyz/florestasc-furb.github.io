@@ -28,7 +28,7 @@
       res.slice(0,8).forEach(function(r){var it=r[1],a=document.createElement('a');
         a.href=/^https?:/.test(it.u)?it.u:raiz+it.u; if(/^https?:/.test(it.u)){a.target='_blank';a.rel='noopener'}
         a.textContent=it.t;var sm=document.createElement('small');sm.textContent=it.s;a.appendChild(sm);out.appendChild(a)});
-      if(!res.length){var p=document.createElement('p');p.className='nota';p.textContent='Nada encontrado. Tente outra palavra ou escreva para florestasc@furb.br.';out.appendChild(p)}
+      if(!res.length){var p=document.createElement('p');p.className='nota';p.textContent=window.TXT_NADA||'';out.appendChild(p)}
     });
   });
 

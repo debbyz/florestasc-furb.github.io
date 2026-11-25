@@ -35,7 +35,7 @@ p{margin:0 0 1em}
 .topo .wrap{display:flex;align-items:center;gap:16px;min-height:72px;flex-wrap:wrap}
 .topo nav{margin-left:auto}
 .marca{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--marca)}
-.marca img{height:46px;width:auto}
+.marca img{height:40px;width:auto}
 .marca span{display:flex;flex-direction:column;line-height:1.05}
 .marca b{font:800 1.45rem Archivo,sans-serif;color:var(--marca);letter-spacing:-.02em}
 .marca small{font-size:.72rem;color:var(--tinta-3);letter-spacing:.02em}
@@ -193,3 +193,43 @@ figure.solo img{max-height:560px;width:auto;max-width:100%}
 .numeros{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
 
 .card-item figure.solo img{width:100%;max-height:none}
+
+/* ---- v2: marca, idiomas, procura, logos ---- */
+.marca b{font:900 1.6rem 'Libre Franklin',Archivo,sans-serif;color:var(--marca);letter-spacing:-.01em}
+.marca small{display:none}
+.topo .wrap{flex-wrap:nowrap}
+@media (max-width:1100px){.topo .wrap{flex-wrap:wrap}}
+.menu>li>a,.menu>li>button{font-size:.9rem;padding:12px 8px}
+.idiomas{display:flex;gap:6px;align-items:center}
+.idiomas a{display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border-radius:6px;font-weight:600;font-size:.78rem;letter-spacing:.04em;text-decoration:none;min-height:30px}
+.idiomas a:hover{background:rgba(255,255,255,.1)}
+.idiomas a[aria-current]{background:rgba(255,255,255,.16)}
+.idiomas .flag{width:20px;height:14px;border-radius:2px;box-shadow:0 0 0 1px rgba(255,255,255,.35)}
+.idiomas.rod{margin-top:14px}
+.marca-rod{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.marca-rod img{height:40px;width:auto}
+.marca-rod b{font:900 1.5rem 'Libre Franklin',Archivo,sans-serif;color:#fff}
+.mais-link{font-weight:600;white-space:nowrap;text-decoration:none}
+.mais-link:hover{text-decoration:underline}
+.aviso-trad{background:var(--papel);border-left:0;padding:0 0 12px;border-bottom:1px solid var(--linha);margin-bottom:20px}
+.procura{background:#fff;border:1px solid var(--linha);border-radius:var(--raio);box-shadow:var(--sombra);padding:30px;margin-top:-64px;position:relative;z-index:2}
+.procura-topo{display:flex;gap:24px;flex-wrap:wrap;align-items:flex-start;justify-content:space-between}
+.procura-topo h2{margin:0 0 4px;font-size:clamp(1.5rem,2.4vw,1.9rem)}
+.procura-topo p{margin:0;color:var(--tinta-2)}
+.procura-busca{flex:1 1 380px;max-width:560px}
+.procura-busca input{width:100%;min-height:50px;border:1px solid #B9C6BC;border-radius:10px;padding:0 16px;font:1rem Inter,sans-serif}
+.grupos-dados{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:26px}
+.grupo-dados{background:var(--papel);border-radius:12px;padding:20px 22px;display:flex;flex-direction:column;gap:9px}
+.grupo-dados h3{margin:0 0 4px;font-size:1.05rem}
+.grupo-dados a{color:var(--marca);font-weight:500;text-underline-offset:3px}
+.procura-rodape{margin:22px 0 0;text-align:right}
+.logos-sec .olho{margin-bottom:14px}
+.realizacao{margin-bottom:32px}
+.faixa-logos{display:flex;flex-wrap:wrap;align-items:center;gap:26px 40px}
+.faixa-logos a{display:block}
+.faixa-logos img{height:54px;width:auto;max-width:150px;object-fit:contain}
+.faixa-logos.grande img{height:84px;max-width:220px}
+/* páginas reunidas */
+.parte{scroll-margin-top:90px;border-top:1px solid #DDE5DF;margin-top:2.6em;padding-top:1.6em}
+.sumario{background:#F2F6F1;border-radius:10px;padding:12px 16px;margin:0 0 1.6em;font-size:.92rem;line-height:1.9}
+.sumario a{white-space:nowrap}
