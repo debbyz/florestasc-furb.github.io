@@ -24,6 +24,7 @@
         for(var i=0;i<termos.length;i++){if(t.indexOf(termos[i])>=0)s+=5;else if(x.indexOf(termos[i])>=0)s+=1;else{s=0;break}}
         if(it.d)s+=1; if(s>0)res.push([s,it])});
       res.sort(function(a,b){return b[0]-a[0]});
+      var vistos={};res=res.filter(function(r){if(vistos[r[1].u])return false;vistos[r[1].u]=1;return true});
       res.slice(0,8).forEach(function(r){var it=r[1],a=document.createElement('a');
         a.href=/^https?:/.test(it.u)?it.u:raiz+it.u; if(/^https?:/.test(it.u)){a.target='_blank';a.rel='noopener'}
         a.textContent=it.t;var sm=document.createElement('small');sm.textContent=it.s;a.appendChild(sm);out.appendChild(a)});
