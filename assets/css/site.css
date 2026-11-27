@@ -344,3 +344,4 @@ figure.solo img{max-height:360px}
 .midia-img img{width:100%;border-radius:8px;display:block}
 .midia-txt p:last-child{margin-bottom:0}
 @media (max-width:760px){.midia-linha{grid-template-columns:1fr}}
+.figura-inteira{margin:1.4em 0}.figura-inteira img{width:100%;max-width:680px;height:auto;border-radius:10px;display:block}
