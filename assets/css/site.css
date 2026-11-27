@@ -293,3 +293,7 @@ figure.solo img{max-height:560px;width:auto;max-width:100%}
 .marcos b{font-size:1.2rem}
 .marcos span{font-size:.86rem}
 @media (max-width:760px){.marcos{grid-auto-columns:72%}}
+figure.solo img{max-height:360px}
+.cat-pub{margin:2em 0 .6em;padding-bottom:6px;border-bottom:2px solid #DDE5DF;color:#32572E}
+.embed-pod{margin:1em 0;max-width:640px}
+.embed-pod iframe{width:100%;height:161px;border:0;border-radius:12px}
