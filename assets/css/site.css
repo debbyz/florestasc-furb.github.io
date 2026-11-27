@@ -308,3 +308,4 @@ figure.solo img{max-height:360px}
 .capa-card > a:first-child::after{content:"";display:block;height:12px}
 .capa-mais{font-size:.82rem;padding:0 14px 12px;color:#32572E}
 @media (max-width:760px){.grade-capas{grid-template-columns:1fr 1fr;gap:12px}.capa-card b{font-size:.88rem;padding:10px 10px 2px}.capa-sub,.capa-mais{padding-left:10px;padding-right:10px}}
+.embed-pod{max-width:400px}.embed-pod iframe{height:102px;border-radius:8px}
