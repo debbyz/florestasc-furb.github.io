@@ -276,3 +276,20 @@ figure.solo img{max-height:560px;width:auto;max-width:100%}
 .linha-tempo{margin:1em 0;border:1px solid #DDE5DF;border-radius:12px;overflow:hidden;background:#fff}
 .linha-tempo iframe{display:block;width:100%;height:650px;border:0}
 @media (max-width:760px){.linha-tempo iframe{height:560px}}
+/* nossa história (home) */
+.historia-home{background:#0F241A;color:#E6EEE8;padding:64px 0}
+.historia-home h2{color:#fff}
+.historia-home .olho{color:#E2A72E}
+.historia-home .btn{background:#E2A72E;color:#0F241A;border-color:#E2A72E}
+.marcos{list-style:none;margin:34px 0 0;padding:0;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(190px,1fr);gap:0;overflow-x:auto;scroll-snap-type:x mandatory;position:relative}
+.marcos li{scroll-snap-align:start;position:relative;padding:34px 18px 6px 0}
+.marcos li::before{content:"";position:absolute;top:9px;left:0;right:0;height:2px;background:#3E6B47}
+.marcos li::after{content:"";position:absolute;top:3px;left:0;width:14px;height:14px;border-radius:50%;background:#E2A72E;box-shadow:0 0 0 4px #0F241A}
+.marcos b{display:block;font-family:Archivo,Inter,sans-serif;font-size:1.35rem;color:#fff;margin-bottom:6px}
+.marcos span{font-size:.92rem;line-height:1.45;color:#C9D8CD}
+@media (max-width:760px){.marcos{grid-auto-columns:72%}}
+.marcos{grid-auto-columns:minmax(140px,1fr)}
+.marcos li{padding-right:14px}
+.marcos b{font-size:1.2rem}
+.marcos span{font-size:.86rem}
+@media (max-width:760px){.marcos{grid-auto-columns:72%}}
